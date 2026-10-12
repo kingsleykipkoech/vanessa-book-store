@@ -1,11 +1,8 @@
-/**
- * VANESSA'S BOOK STORE — APPLICATION LOGIC
- * Authentic personal bookshelf catalog with real book covers and dark themes.
- * Zero emojis, zero pill-capsules, clean typography.
- */
+// Vanessa's Book Store - Application Logic
+
 
 document.addEventListener('DOMContentLoaded', () => {
-  // --- 1. Realistic Book Dataset with Real Cover Images ---
+  // Initial book catalog dataset
   const initialBooks = [
     {
       id: 1,
@@ -140,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeSwitcher = document.getElementById('theme-switcher');
   const toast = document.getElementById('toast');
 
-  // --- 2. Dark/Light Palette Theme Switcher ---
+  // Theme switcher
   if (themeSwitcher) {
     const urlTheme = new URLSearchParams(window.location.search).get('theme');
     const docTheme = document.documentElement.getAttribute('data-theme');
@@ -157,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 3. Toast Feedback (No Emoji) ---
+  // Toast notification
   function showToast(msg) {
     if (!toast) return;
     toast.textContent = msg;
@@ -165,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => toast.classList.remove('show'), 3000);
   }
 
-  // --- 4. Sticky Header Active Links on Scroll ---
+  // Active navigation link highlighting
   const sections = document.querySelectorAll('.page-section');
   const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-panel a');
 
@@ -202,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 5. Dashboard Counters ---
+  // Update dashboard counters
   function updateDashboard() {
     const total = storeBooks.length;
     const finished = storeBooks.filter(b => b.status === 'Finished').length;
@@ -215,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (statWishlist) statWishlist.textContent = wishlist;
   }
 
-  // --- 6. Render Book Catalog Grid (Real Covers, Clean Ratings, Zero Pills) ---
+  // Render book catalog
   function renderCatalog() {
     if (!storeGrid) return;
 
@@ -295,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 7. Book Details Modal (Simplified, No Vibe-Pills) ---
+  // Book details modal dialog
   function showBookDetails(book) {
     if (!detailsBody || !detailsModal) return;
 
@@ -351,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 8. Filter & Search Handlers ---
+  // Search and filter event listeners
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
       searchKeyword = e.target.value.trim();
@@ -375,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- 9. Modal Toggles ---
+  // Modal toggle handlers
   const openAddBtns = document.querySelectorAll('.btn-open-add-book, .btn-add-store');
   const closeModals = document.querySelectorAll('.btn-close-modal, .btn-cancel-modal');
 
@@ -400,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // --- 10. Add Book Form Submission ---
+  // Add book form submission
   if (addBookForm) {
     addBookForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -459,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 11. Preferences Form ---
+  // Preferences form submission
   if (preferencesForm) {
     preferencesForm.addEventListener('submit', (e) => {
       e.preventDefault();

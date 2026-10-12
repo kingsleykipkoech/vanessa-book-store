@@ -22,9 +22,7 @@
 </head>
 <body>
 
-  <!-- =======================================================================
-       1. STICKY HEADER MENU (ZERO EMOJIS, THEME SELECTOR)
-       ======================================================================= -->
+  <!-- Header & Navigation -->
   <header class="site-header">
     <div class="nav-container">
       <a href="#about" class="brand" aria-label="Vanessa's Book Store Home">
@@ -32,7 +30,7 @@
         <span class="brand-tag">Personal Reading Archive</span>
       </a>
 
-      <!-- Rubric Section Links -->
+      <!-- Navigation Links -->
       <ul class="nav-links">
         <li class="nav-item"><a href="#about" class="active">About</a></li>
         <li class="nav-item"><a href="#dashboard">Dashboard</a></li>
@@ -40,7 +38,7 @@
         <li class="nav-item"><a href="#preferences">Preferences</a></li>
       </ul>
 
-      <!-- Action & Dark Theme Switcher -->
+      <!-- Palette Switcher & Actions -->
       <div class="nav-actions">
         <select id="theme-switcher" class="theme-switcher" aria-label="Color Palette">
           <optgroup label="Dark Palettes">
@@ -78,9 +76,7 @@
   </header>
 
   <main>
-    <!-- =======================================================================
-         SECTION 1: ABOUT (FULL PAGE)
-         ======================================================================= -->
+    <!-- Section 1: About -->
     <section class="page-section" id="about">
       <div class="container">
         <div class="about-grid">
@@ -97,7 +93,7 @@
             </div>
           </div>
 
-          <!-- Simplified Reader Profile Card (No Gimmick Barcode/Passport) -->
+          <!-- Reader Profile Card -->
           <div class="reader-profile-card">
             <div class="profile-card-title">Reader Profile</div>
             
@@ -127,9 +123,7 @@
       </div>
     </section>
 
-    <!-- =======================================================================
-         SECTION 2: DASHBOARD (FULL PAGE)
-         ======================================================================= -->
+    <!-- Section 2: Dashboard -->
     <section class="page-section" id="dashboard">
       <div class="container">
         <div class="section-header">
@@ -138,7 +132,7 @@
           <p class="section-subtitle">Summary of books read, current reading progress, and shelf logs.</p>
         </div>
 
-        <!-- 4 Stat Tiles -->
+        <!-- Statistics Cards -->
         <div class="stats-tiles">
           <div class="stat-tile">
             <div class="stat-tile-num" id="dash-total-books">24</div>
@@ -158,9 +152,9 @@
           </div>
         </div>
 
-        <!-- Dashboard Split View -->
+        <!-- Reading Spotlight & Recent Activity -->
         <div class="dashboard-split">
-          <!-- Currently Reading Spotlight (Real Book Cover, Clean Labels, Zero Pills) -->
+          <!-- Currently Reading Spotlight -->
           <div class="active-reading-card">
             <div>
               <div class="active-read-header">
@@ -194,7 +188,7 @@
             </div>
           </div>
 
-          <!-- Recent Shelf Additions (Clean List with Zero Colored Dots) -->
+          <!-- Recent Additions List -->
           <div class="activity-panel">
             <h3 style="font-size: 1.15rem; margin-bottom: 4px;">Recent Shelf Additions</h3>
             <p style="font-size: 0.8rem; color: var(--text-muted);">Recent reading activity</p>
@@ -218,9 +212,7 @@
       </div>
     </section>
 
-    <!-- =======================================================================
-         SECTION 3: CATALOG (FULL PAGE)
-         ======================================================================= -->
+    <!-- Section 3: Catalog -->
     <section class="page-section" id="catalog">
       <div class="container">
         <div class="section-header">
@@ -268,9 +260,7 @@
       </div>
     </section>
 
-    <!-- =======================================================================
-         SECTION 4: PREFERENCES (FULL PAGE)
-         ======================================================================= -->
+    <!-- Section 4: Preferences -->
     <section class="page-section" id="preferences">
       <div class="container">
         <div class="section-header">
@@ -347,9 +337,7 @@
     </section>
   </main>
 
-  <!-- =======================================================================
-       MODAL: ADD NEW BOOK
-       ======================================================================= -->
+  <!-- Add Book Modal -->
   <div class="modal-overlay" id="add-book-modal" role="dialog" aria-modal="true" aria-labelledby="add-modal-heading">
     <div class="modal-dialog">
       <div class="modal-dialog-header">
@@ -416,9 +404,7 @@
     </div>
   </div>
 
-  <!-- =======================================================================
-       MODAL: BOOK DETAILS
-       ======================================================================= -->
+  <!-- Book Details Modal -->
   <div class="modal-overlay" id="details-modal" role="dialog" aria-modal="true" aria-labelledby="details-heading">
     <div class="modal-dialog">
       <div class="modal-dialog-header">

@@ -1,7 +1,5 @@
-/* ==========================================================================
-   VANESSA'S BOOK STORE CATALOG — CLEAN, AUTHENTIC (REAL BOOK COVERS)
-   Zero emojis, zero pill capsules on ratings/status, clean typography.
-   ========================================================================== */
+/* Catalog & Book Grid Styles */
+
 
 .catalog-wrapper {
   display: flex;
@@ -159,7 +157,7 @@
   margin-bottom: 12px;
 }
 
-/* Clean, Minimalist Meta (No Pill Capsules) */
+/* Book Card Meta */
 .card-book-meta {
   font-size: 0.78rem;
   display: flex;

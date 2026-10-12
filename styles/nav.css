@@ -1,7 +1,5 @@
-/* ==========================================================================
-   STICKY HEADER MENU (ZERO EMOJIS, ZERO SHIFT ON HOVER/SCROLL)
-   Rubric sections: About, Dashboard, Catalog, Preferences
-   ========================================================================== */
+/* Header and Navigation Styles */
+
 
 .site-header {
   position: sticky;
@@ -26,7 +24,7 @@
   justify-content: space-between;
 }
 
-/* Brand (Clean Typography, No Emoji) */
+/* Site Brand */
 .brand {
   display: flex;
   flex-direction: column;

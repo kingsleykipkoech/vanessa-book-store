@@ -1,7 +1,5 @@
-/* ==========================================================================
-   FULL PAGE SECTIONS STYLES — CLEAN, AUTHENTIC, HUMAN (ZERO PILL/VIBE ARTIFACTS)
-   Sections: #about, #dashboard, #catalog, #preferences
-   ========================================================================== */
+/* Page Sections Styles */
+
 
 .page-section {
   min-height: 780px;
@@ -41,9 +39,7 @@
   max-width: 620px;
 }
 
-/* ==========================================================================
-   1. ABOUT SECTION (#about)
-   ========================================================================== */
+/* About Section */
 .about-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -70,7 +66,7 @@
   margin-bottom: 28px;
 }
 
-/* Simplified, Human Reader Profile Card (No fake passport/barcode) */
+/* Reader Profile Card */
 .reader-profile-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -121,9 +117,7 @@
   color: var(--text-primary);
 }
 
-/* ==========================================================================
-   2. DASHBOARD SECTION (#dashboard)
-   ========================================================================== */
+/* Dashboard Section */
 .stats-tiles {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -175,7 +169,7 @@
   justify-content: space-between;
 }
 
-/* Simple text label, NO rounded pill bubble */
+/* Status Label */
 .status-text-label {
   font-size: 0.75rem;
   font-weight: 600;
@@ -198,7 +192,7 @@
   margin-bottom: 20px;
 }
 
-/* Real Book Cover Image */
+/* Active Book Cover */
 .active-book-cover-img {
   width: 78px;
   height: 114px;
@@ -242,7 +236,7 @@
   margin-top: 14px;
 }
 
-/* Clean list item with NO artificial colored dots */
+/* Activity List Item */
 .activity-item {
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border-subtle);
@@ -266,9 +260,7 @@
   color: var(--text-muted);
 }
 
-/* ==========================================================================
-   4. PREFERENCES SECTION (#preferences)
-   ========================================================================== */
+/* Preferences Section */
 .pref-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

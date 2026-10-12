@@ -1,12 +1,8 @@
-/* ==========================================================================
-   VANESSA'S BOOK STORE — DESIGN SYSTEM
-   Dark Theme Options: Deep Navy Slate / Dark Espresso / Nordic Pine
-   Light Theme Options: Warm Linen / Minimalist Studio / Botanical Sage
-   Zero emojis, zero "AI-generated" pills/boxes, clean human typography.
-   ========================================================================== */
+/* Design System & Theme Styles */
+
 
 :root {
-  /* Default Dark: Deep Navy Slate & Warm Terracotta */
+  /* Default Navy Theme */
   --bg-primary: #0F141C;
   --bg-surface: #18202C;
   --bg-surface-elevated: #202B3B;
@@ -35,9 +31,7 @@
   --transition: all 0.2s ease;
 }
 
-/* --- DARK PALETTES --- */
-
-/* Dark Variant 2: Espresso & Sand */
+/* Espresso Theme */
 [data-theme="espresso"] {
   --bg-primary: #151210;
   --bg-surface: #1E1A17;
@@ -54,7 +48,7 @@
   --accent-secondary: #D4B28C;     /* Warm Sand */
 }
 
-/* Dark Variant 3: Nordic Pine & Sage */
+/* Nordic Theme */
 [data-theme="nordic"] {
   --bg-primary: #0E1613;
   --bg-surface: #15221D;
@@ -71,9 +65,7 @@
   --accent-secondary: #D9A86C;     /* Muted Ochre */
 }
 
-/* --- LIGHT PALETTES --- */
-
-/* Light Variant 1: Warm Linen & Terracotta */
+/* Linen Theme */
 [data-theme="linen"] {
   --bg-primary: #FAF7F2;
   --bg-surface: #FFFFFF;
@@ -90,7 +82,7 @@
   --accent-secondary: #52735E;   /* Earthy Sage */
 }
 
-/* Light Variant 2: Minimalist Paper & Cobalt */
+/* Studio Theme */
 [data-theme="studio"] {
   --bg-primary: #F8F9FA;
   --bg-surface: #FFFFFF;
@@ -107,7 +99,7 @@
   --accent-secondary: #0D9488;   /* Teal */
 }
 
-/* Light Variant 3: Botanical Sage & Cream */
+/* Sage Theme */
 [data-theme="sage"] {
   --bg-primary: #F5F7F4;
   --bg-surface: #FFFFFF;
