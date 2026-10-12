@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <radialGradient id="espressoVignette" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#1B1613" />
+      <stop offset="55%" stop-color="#14100E" />
+      <stop offset="100%" stop-color="#0A0807" />
+    </radialGradient>
+    <pattern id="woodChevron" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 0 40 L 40 0 L 80 40 L 40 80 Z" fill="none" stroke="#D4B28C" stroke-width="0.8" stroke-opacity="0.05" />
+      <path d="M 40 40 L 80 0 M 0 80 L 40 40" stroke="#D47B5A" stroke-width="0.6" stroke-opacity="0.04" />
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#espressoVignette)" />
+  <rect width="1920" height="1080" fill="url(#woodChevron)" />
+
+  <!-- Subtle Vintage Architectural Arcs & Framing Lines -->
+  <g stroke="#D4B28C" stroke-width="1" fill="none">
+    <path d="M 0 160 Q 480 200 960 160 T 1920 160" stroke-opacity="0.07" />
+    <path d="M 0 880 Q 480 840 960 880 T 1920 880" stroke-opacity="0.05" />
+
+    <!-- Quiet Library Shelf Vertical Guides -->
+    <line x1="280" y1="0" x2="280" y2="1080" stroke-dasharray="8 16" stroke-opacity="0.04" />
+    <line x1="960" y1="0" x2="960" y2="1080" stroke-dasharray="8 16" stroke-opacity="0.03" />
+    <line x1="1640" y1="0" x2="1640" y2="1080" stroke-dasharray="8 16" stroke-opacity="0.04" />
+  </g>
+
+  <!-- Warm Clay Corner Accents -->
+  <g stroke="#D47B5A" stroke-width="1.2" stroke-opacity="0.12" fill="none">
+    <path d="M 60 120 L 60 60 L 120 60" />
+    <circle cx="60" cy="60" r="3" fill="#D47B5A" fill-opacity="0.25" stroke="none" />
+    <path d="M 1860 120 L 1860 60 L 1800 60" />
+    <circle cx="1860" cy="60" r="3" fill="#D47B5A" fill-opacity="0.25" stroke="none" />
+  </g>
+</svg>

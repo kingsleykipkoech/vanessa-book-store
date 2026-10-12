@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <radialGradient id="navyVignette" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#141C28" />
+      <stop offset="50%" stop-color="#0F141C" />
+      <stop offset="100%" stop-color="#090C11" />
+    </radialGradient>
+    <linearGradient id="coralFade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E26D5C" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#64B5F6" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#navyVignette)" />
+
+  <!-- Subtle Celestial & Starry Constellation Nodes -->
+  <g stroke="#64B5F6" stroke-opacity="0.12" stroke-width="1" fill="none">
+    <!-- Northern arc -->
+    <path d="M 200 150 Q 500 80 850 180 T 1450 120 T 1800 240" />
+    <path d="M 150 450 Q 600 380 1050 490 T 1650 410" stroke-opacity="0.08" />
+    <path d="M 300 800 Q 750 720 1200 830 T 1750 750" stroke-opacity="0.06" />
+
+    <!-- Constellation ties -->
+    <line x1="420" y1="130" x2="520" y2="280" />
+    <line x1="520" y1="280" x2="680" y2="240" />
+    <line x1="680" y1="240" x2="850" y2="180" />
+    <line x1="1200" y1="160" x2="1350" y2="260" />
+    <line x1="1350" y1="260" x2="1450" y2="120" />
+    <line x1="1450" y1="120" x2="1580" y2="200" />
+    <line x1="280" y1="650" x2="400" y2="720" />
+    <line x1="400" y1="720" x2="550" y2="680" />
+    <line x1="1400" y1="720" x2="1520" y2="820" />
+  </g>
+
+  <!-- Constellation stars -->
+  <g fill="#E26D5C">
+    <circle cx="420" cy="130" r="2.5" fill-opacity="0.4" />
+    <circle cx="520" cy="280" r="3" fill-opacity="0.5" />
+    <circle cx="680" cy="240" r="2" fill-opacity="0.35" />
+    <circle cx="850" cy="180" r="3.5" fill-opacity="0.6" />
+    <circle cx="1200" cy="160" r="2.5" fill-opacity="0.4" />
+    <circle cx="1350" cy="260" r="3" fill-opacity="0.55" />
+    <circle cx="1450" cy="120" r="4" fill-opacity="0.7" />
+    <circle cx="1580" cy="200" r="2" fill-opacity="0.35" />
+  </g>
+
+  <!-- Ambient star dust -->
+  <g fill="#64B5F6" fill-opacity="0.25">
+    <circle cx="180" cy="120" r="1.5" />
+    <circle cx="310" cy="340" r="1" />
+    <circle cx="750" cy="90" r="1.5" />
+    <circle cx="980" cy="220" r="1.2" />
+    <circle cx="1120" cy="380" r="1" />
+    <circle cx="1680" cy="110" r="1.5" />
+    <circle cx="1780" cy="390" r="1.2" />
+    <circle cx="240" cy="780" r="1" />
+    <circle cx="620" cy="850" r="1.5" />
+    <circle cx="1050" cy="750" r="1" />
+    <circle cx="1320" cy="920" r="1.5" />
+    <circle cx="1650" cy="820" r="1.2" />
+  </g>
+
+  <!-- Large faint background astrolabe ring -->
+  <g transform="translate(1550, 480)" stroke="url(#coralFade)" stroke-width="1.2" fill="none">
+    <circle r="260" stroke-dasharray="4 8" />
+    <circle r="380" stroke-opacity="0.08" />
+    <circle r="520" stroke-opacity="0.05" />
+  </g>
+</svg>

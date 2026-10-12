@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <radialGradient id="sageWash" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F5F7F4" />
+      <stop offset="100%" stop-color="#EBF0EA" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#sageWash)" />
+
+  <!-- Botanical Herbarium Specimen Silhouettes in Subtle Olive/Sage -->
+  <g stroke="#417558" stroke-width="1.2" stroke-opacity="0.1" fill="none">
+    <!-- Fern Frond Left -->
+    <path d="M 60 480 Q 180 380 240 220" />
+    <path d="M 110 430 Q 140 400 170 410" />
+    <path d="M 140 380 Q 180 350 210 360" />
+    <path d="M 170 330 Q 210 290 240 310" />
+    <path d="M 195 280 Q 230 250 255 260" />
+
+    <!-- Eucalyptus Stem Right -->
+    <path d="M 1880 720 Q 1740 620 1680 440" />
+    <circle cx="1780" cy="620" r="16" stroke-opacity="0.08" />
+    <circle cx="1730" cy="540" r="14" stroke-opacity="0.08" />
+    <circle cx="1695" cy="460" r="12" stroke-opacity="0.08" />
+    
+    <!-- Gentle Botanical Wreath Contour Center-Bottom -->
+    <path d="M 720 980 C 860 920, 1060 920, 1200 980" stroke-dasharray="4 6" stroke-opacity="0.07" />
+  </g>
+
+  <!-- Terracotta Herbarium Specimen Seeds & Accents -->
+  <g fill="#C87852" fill-opacity="0.12">
+    <circle cx="240" cy="220" r="3" />
+    <circle cx="1680" cy="440" r="3" />
+    <circle cx="480" cy="180" r="2" />
+    <circle cx="1440" cy="280" r="2" />
+    <circle cx="960" cy="940" r="2.5" />
+  </g>
+</svg>

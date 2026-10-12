@@ -20,6 +20,11 @@
   --accent-primary-hover: #D45B4A;
   --accent-secondary: #64B5F6;     /* Soft Steel Blue */
 
+  --bg-image: url('../assets/backgrounds/bg-navy.svg');
+  --bg-repeat: no-repeat;
+  --bg-size: cover;
+  --bg-position: center top;
+
   --font-serif: 'Lora', Georgia, serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
@@ -46,6 +51,10 @@
   --accent-primary: #D47B5A;       /* Warm Clay */
   --accent-primary-hover: #BF6B4C;
   --accent-secondary: #D4B28C;     /* Warm Sand */
+  --bg-image: url('../assets/backgrounds/bg-espresso.svg');
+  --bg-repeat: no-repeat;
+  --bg-size: cover;
+  --bg-position: center top;
 }
 
 /* Nordic Theme */
@@ -63,6 +72,10 @@
   --accent-primary: #76A58E;       /* Pale Sage Mint */
   --accent-primary-hover: #63927B;
   --accent-secondary: #D9A86C;     /* Muted Ochre */
+  --bg-image: url('../assets/backgrounds/bg-nordic.svg');
+  --bg-repeat: no-repeat;
+  --bg-size: cover;
+  --bg-position: center top;
 }
 
 /* Linen Theme */
@@ -80,6 +93,10 @@
   --accent-primary: #C85A32;     /* Terracotta Rust */
   --accent-primary-hover: #B54F2A;
   --accent-secondary: #52735E;   /* Earthy Sage */
+  --bg-image: url('../assets/backgrounds/bg-linen.svg');
+  --bg-repeat: repeat;
+  --bg-size: 320px 320px;
+  --bg-position: top left;
 }
 
 /* Studio Theme */
@@ -97,6 +114,10 @@
   --accent-primary: #2563EB;     /* Royal Cobalt */
   --accent-primary-hover: #1D4ED8;
   --accent-secondary: #0D9488;   /* Teal */
+  --bg-image: url('../assets/backgrounds/bg-studio.svg');
+  --bg-repeat: repeat;
+  --bg-size: 80px 80px;
+  --bg-position: top left;
 }
 
 /* Sage Theme */
@@ -114,6 +135,10 @@
   --accent-primary: #417558;     /* Rich Botanical Green */
   --accent-primary-hover: #335E46;
   --accent-secondary: #C87852;   /* Terracotta Accent */
+  --bg-image: url('../assets/backgrounds/bg-sage.svg');
+  --bg-repeat: no-repeat;
+  --bg-size: cover;
+  --bg-position: center top;
 }
 
 /* Base Reset */
@@ -130,12 +155,17 @@ html {
 
 body {
   background-color: var(--bg-primary);
+  background-image: var(--bg-image);
+  background-repeat: var(--bg-repeat);
+  background-size: var(--bg-size);
+  background-position: var(--bg-position);
+  background-attachment: fixed;
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 15px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  transition: background-color 0.25s ease, color 0.25s ease;
+  transition: background-color 0.25s ease, background-image 0.25s ease, color 0.25s ease;
 }
 
 .container {

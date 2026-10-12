@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <radialGradient id="nordicVignette" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#14211C" />
+      <stop offset="55%" stop-color="#0E1613" />
+      <stop offset="100%" stop-color="#070C0A" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#nordicVignette)" />
+
+  <!-- Organic Topographic Contour Lines in Muted Sage -->
+  <g stroke="#76A58E" stroke-width="1.2" fill="none">
+    <path d="M -100 240 C 300 180, 700 320, 1100 210 S 1700 160, 2020 280" stroke-opacity="0.08" />
+    <path d="M -100 290 C 320 230, 720 370, 1120 260 S 1720 210, 2020 330" stroke-opacity="0.06" />
+    <path d="M -100 340 C 340 280, 740 420, 1140 310 S 1740 260, 2020 380" stroke-opacity="0.05" />
+    
+    <path d="M -100 780 C 400 840, 800 720, 1250 830 S 1800 870, 2020 760" stroke-opacity="0.07" />
+    <path d="M -100 830 C 420 890, 820 770, 1270 880 S 1820 920, 2020 810" stroke-opacity="0.05" />
+  </g>
+
+  <!-- Stylized Pine Needle / Herbarium Branches in Nordic Mint -->
+  <g stroke="#76A58E" stroke-width="1" stroke-opacity="0.1" fill="none">
+    <!-- Branch Left -->
+    <path d="M 80 820 Q 140 760 180 680" />
+    <line x1="120" y1="770" x2="160" y2="760" />
+    <line x1="140" y1="735" x2="185" y2="730" />
+    <line x1="160" y1="705" x2="200" y2="705" />
+    
+    <!-- Branch Right -->
+    <path d="M 1840 220 Q 1780 280 1740 360" />
+    <line x1="1800" y1="270" x2="1760" y2="280" />
+    <line x1="1780" y1="305" x2="1735" y2="310" />
+    <line x1="1760" y1="335" x2="1720" y2="335" />
+  </g>
+
+  <!-- Muted Ochre Flora Accent Points -->
+  <g fill="#D9A86C" fill-opacity="0.25">
+    <circle cx="180" cy="680" r="2.5" />
+    <circle cx="160" cy="760" r="2" />
+    <circle cx="1740" cy="360" r="2.5" />
+    <circle cx="1760" cy="280" r="2" />
+    <circle cx="950" cy="180" r="1.5" />
+    <circle cx="1300" cy="850" r="1.5" />
+  </g>
+</svg>
