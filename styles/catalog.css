@@ -1,0 +1,229 @@
+/* ==========================================================================
+   VANESSA'S BOOK STORE CATALOG — CLEAN, AUTHENTIC (REAL BOOK COVERS)
+   Zero emojis, zero pill capsules on ratings/status, clean typography.
+   ========================================================================== */
+
+.catalog-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Toolbar */
+.store-toolbar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.toolbar-search-row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.search-field {
+  flex: 1;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.search-field:focus {
+  border-color: var(--accent-primary);
+}
+
+.status-dropdown {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.status-dropdown:focus {
+  border-color: var(--accent-primary);
+}
+
+/* Category Filter Buttons */
+.genre-pills {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.genre-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.genre-pill {
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-medium);
+  background: var(--bg-surface-elevated);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.genre-pill:hover {
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+}
+
+.genre-pill.active {
+  background: var(--accent-primary);
+  color: #FFFFFF;
+  border-color: var(--accent-primary);
+}
+
+/* Books Grid */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+/* Individual Book Card */
+.store-book-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.store-book-card:hover {
+  border-color: var(--border-medium);
+  transform: translateY(-2px);
+}
+
+/* Real Book Cover Image Wrapper */
+.store-cover-wrap {
+  width: 100%;
+  height: 230px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  background: var(--bg-surface-elevated);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-subtle);
+}
+
+.store-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Book Details */
+.card-book-genre {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.card-book-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 2px;
+  color: var(--text-primary);
+}
+
+.card-book-author {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+/* Clean, Minimalist Meta (No Pill Capsules) */
+.card-book-meta {
+  font-size: 0.78rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.clean-status {
+  font-weight: 500;
+}
+
+.status-finished { color: #81C784; }
+.status-reading { color: var(--accent-primary); }
+.status-wishlist { color: var(--text-muted); }
+
+.clean-rating {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.card-actions-row {
+  margin-top: auto;
+  display: flex;
+}
+
+.btn-card-details {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.82rem;
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+/* Empty State */
+.store-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 20px;
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-medium);
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 1100px) {
+  .store-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 780px) {
+  .store-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .toolbar-search-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 520px) {
+  .store-grid {
+    grid-template-columns: 1fr;
+  }
+}
