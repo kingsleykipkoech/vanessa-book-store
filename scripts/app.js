@@ -137,22 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeSwitcher = document.getElementById('theme-switcher');
   const toast = document.getElementById('toast');
 
-  // Theme switcher
-  if (themeSwitcher) {
-    const urlTheme = new URLSearchParams(window.location.search).get('theme');
-    const docTheme = document.documentElement.getAttribute('data-theme');
-    const activeTheme = urlTheme || docTheme || localStorage.getItem('vanessa_theme') || 'navy';
-    
-    themeSwitcher.value = activeTheme;
-    document.documentElement.setAttribute('data-theme', activeTheme);
-
-    themeSwitcher.addEventListener('change', (e) => {
-      const selected = e.target.value;
-      document.documentElement.setAttribute('data-theme', selected);
-      localStorage.setItem('vanessa_theme', selected);
-      showToast(`Theme updated: ${themeSwitcher.options[themeSwitcher.selectedIndex].text}`);
-    });
-  }
+  // Theme locked to Nordic Pine
+  document.documentElement.setAttribute('data-theme', 'nordic');
+  localStorage.setItem('vanessa_theme', 'nordic');
 
   // Toast notification
   function showToast(msg) {

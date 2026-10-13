@@ -2,25 +2,25 @@
 
 
 :root {
-  /* Default Navy Theme */
-  --bg-primary: #0F141C;
-  --bg-surface: #18202C;
-  --bg-surface-elevated: #202B3B;
-  --bg-surface-hover: #29374B;
+  /* Nordic Pine Theme (Primary) */
+  --bg-primary: #0E1613;
+  --bg-surface: #15221D;
+  --bg-surface-elevated: #1D2E27;
+  --bg-surface-hover: #273D34;
   
-  --border-subtle: #232E3E;
-  --border-medium: #324258;
-  --border-strong: #445874;
+  --border-subtle: #22362E;
+  --border-medium: #324E43;
+  --border-strong: #466C5D;
 
-  --text-primary: #F0F4F8;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
+  --text-primary: #EEF3F0;
+  --text-secondary: #97ABA1;
+  --text-muted: #6B7F76;
 
-  --accent-primary: #E26D5C;       /* Warm Terracotta Coral */
-  --accent-primary-hover: #D45B4A;
-  --accent-secondary: #64B5F6;     /* Soft Steel Blue */
+  --accent-primary: #76A58E;       /* Pale Sage Mint */
+  --accent-primary-hover: #63927B;
+  --accent-secondary: #D9A86C;     /* Muted Ochre */
 
-  --bg-image: url('../assets/backgrounds/bg-navy.svg');
+  --bg-image: url('../assets/backgrounds/bg-nordic.svg');
   --bg-repeat: no-repeat;
   --bg-size: cover;
   --bg-position: center top;
@@ -34,111 +34,6 @@
   --radius-lg: 14px;
 
   --transition: all 0.2s ease;
-}
-
-/* Espresso Theme */
-[data-theme="espresso"] {
-  --bg-primary: #151210;
-  --bg-surface: #1E1A17;
-  --bg-surface-elevated: #28231F;
-  --bg-surface-hover: #342D28;
-  --border-subtle: #2E2722;
-  --border-medium: #423831;
-  --border-strong: #5A4E45;
-  --text-primary: #F5EFEB;
-  --text-secondary: #A89B91;
-  --text-muted: #786C63;
-  --accent-primary: #D47B5A;       /* Warm Clay */
-  --accent-primary-hover: #BF6B4C;
-  --accent-secondary: #D4B28C;     /* Warm Sand */
-  --bg-image: url('../assets/backgrounds/bg-espresso.svg');
-  --bg-repeat: no-repeat;
-  --bg-size: cover;
-  --bg-position: center top;
-}
-
-/* Nordic Theme */
-[data-theme="nordic"] {
-  --bg-primary: #0E1613;
-  --bg-surface: #15221D;
-  --bg-surface-elevated: #1D2E27;
-  --bg-surface-hover: #273D34;
-  --border-subtle: #22362E;
-  --border-medium: #324E43;
-  --border-strong: #466C5D;
-  --text-primary: #EEF3F0;
-  --text-secondary: #97ABA1;
-  --text-muted: #6B7F76;
-  --accent-primary: #76A58E;       /* Pale Sage Mint */
-  --accent-primary-hover: #63927B;
-  --accent-secondary: #D9A86C;     /* Muted Ochre */
-  --bg-image: url('../assets/backgrounds/bg-nordic.svg');
-  --bg-repeat: no-repeat;
-  --bg-size: cover;
-  --bg-position: center top;
-}
-
-/* Linen Theme */
-[data-theme="linen"] {
-  --bg-primary: #FAF7F2;
-  --bg-surface: #FFFFFF;
-  --bg-surface-elevated: #F3EFE8;
-  --bg-surface-hover: #ECE5DA;
-  --border-subtle: #EAE3D7;
-  --border-medium: #DDD4C5;
-  --border-strong: #C4B8A5;
-  --text-primary: #241C18;       /* Deep Espresso */
-  --text-secondary: #6B6057;     /* Warm Cocoa */
-  --text-muted: #9E9287;         /* Gentle Taupe */
-  --accent-primary: #C85A32;     /* Terracotta Rust */
-  --accent-primary-hover: #B54F2A;
-  --accent-secondary: #52735E;   /* Earthy Sage */
-  --bg-image: url('../assets/backgrounds/bg-linen.svg');
-  --bg-repeat: repeat;
-  --bg-size: 320px 320px;
-  --bg-position: top left;
-}
-
-/* Studio Theme */
-[data-theme="studio"] {
-  --bg-primary: #F8F9FA;
-  --bg-surface: #FFFFFF;
-  --bg-surface-elevated: #EFF2F6;
-  --bg-surface-hover: #E2E8F0;
-  --border-subtle: #E2E8F0;
-  --border-medium: #CBD5E1;
-  --border-strong: #94A3B8;
-  --text-primary: #0F172A;       /* Slate Black */
-  --text-secondary: #475569;     /* Slate Gray */
-  --text-muted: #64748B;         /* Cool Gray */
-  --accent-primary: #2563EB;     /* Royal Cobalt */
-  --accent-primary-hover: #1D4ED8;
-  --accent-secondary: #0D9488;   /* Teal */
-  --bg-image: url('../assets/backgrounds/bg-studio.svg');
-  --bg-repeat: repeat;
-  --bg-size: 80px 80px;
-  --bg-position: top left;
-}
-
-/* Sage Theme */
-[data-theme="sage"] {
-  --bg-primary: #F5F7F4;
-  --bg-surface: #FFFFFF;
-  --bg-surface-elevated: #EBF0EA;
-  --bg-surface-hover: #DFE7DE;
-  --border-subtle: #DFE5E0;
-  --border-medium: #C7D3C9;
-  --border-strong: #A8BCAF;
-  --text-primary: #18241D;       /* Forest Pine Ink */
-  --text-secondary: #4F6357;     /* Muted Foliage */
-  --text-muted: #738A7C;         /* Soft Herbarium */
-  --accent-primary: #417558;     /* Rich Botanical Green */
-  --accent-primary-hover: #335E46;
-  --accent-secondary: #C87852;   /* Terracotta Accent */
-  --bg-image: url('../assets/backgrounds/bg-sage.svg');
-  --bg-repeat: no-repeat;
-  --bg-size: cover;
-  --bg-position: center top;
 }
 
 /* Base Reset */
